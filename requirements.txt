@@ -1,6 +1,6 @@
 streamlit==0.82.0
 pandas==1.2.4
-beautifulsoup4
+beautifulsoup4==4.9.3
 urllib
 pytesseract==0.3.7
 git+https://github.com/NLPatVCU/medaCy.git
