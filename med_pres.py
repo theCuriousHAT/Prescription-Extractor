@@ -14,15 +14,19 @@ from PIL import Image
 import io
 import requests
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+
+directory = os.path.dirname(__file__)
+os.chdir(directory)
+
+pytesseract.pytesseract.tesseract_cmd = os.path.join(directory,'Tesseract-OCR','tesseract.exe')
+
 
 from medacy.model.model import Model
 model = Model.load_external('medacy_model_clinical_notes')
 
-im = Image.open(r"logos\Prescription Extractor-logos.jpeg")
-#bg_im = Image.open(r"logos.PNG")
+im = Image.open(os.path.join(directory,'logos','Prescription Extractor-logos.jpeg'))
+
 st.set_page_config(page_title="Prescription Extractor", page_icon=im)
-#st.image(im)
 
 
 def open_image(image):
