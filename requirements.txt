@@ -3,7 +3,8 @@ pandas==1.2.4
 beautifulsoup4==4.9.3
 urllib3
 pytesseract==0.3.7
-git+https://github.com/NLPatVCU/medaCy.git@v1.0.0
-git+https://github.com/NLPatVCU/medaCy_model_clinical_notes.git@12ab41e23b5bd8584b17454828
+git+https://github.com/NLPatVCU/medaCy_model_clinical_notes.git
+git+https://github.com/NLPatVCU/medaCy.git
+
 
 
