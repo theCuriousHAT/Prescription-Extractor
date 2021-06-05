@@ -4,5 +4,6 @@ beautifulsoup4==4.9.3
 urllib3
 pytesseract==0.3.7
 git+https://github.com/NLPatVCU/medaCy.git
-git+https://github.com/NLPatVCU/medaCy_model_clinical_notes/archive/refs/tags/v1.0.3.zip
+git+https://github.com/NLPatVCU/medaCy_model_clinical_notes.git
+
 
