@@ -18,7 +18,7 @@ import pytesseract
 directory = os.path.dirname(__file__)
 os.chdir(directory)
 
-pytesseract.pytesseract.tesseract_cmd = os.path.join(directory,'Tesseract-OCR','tesseract.exe')
+pytesseract.pytesseract.tesseract_cmd = os.path.join(directory,'Tesseract-OCR')
 
 
 from medacy.model.model import Model
